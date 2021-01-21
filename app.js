@@ -40,11 +40,11 @@ function create_grid(grid_size, style) {
 }
 
 function high_density() {
-    create_grid(35, "pixel-high");
+    create_grid(30, "pixel-high");
 }
 
 function medium_density() {
-    create_grid(30, "pixel-medium");
+    create_grid(26, "pixel-medium");
 }
 
 function low_density() {
