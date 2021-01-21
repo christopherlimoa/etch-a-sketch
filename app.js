@@ -8,3 +8,14 @@ for (let i =0; i<16; i++){
         container.appendChild(div);
     }
 }
+
+function reset_canvas() {
+    console.log(123);
+    // getElementsByClassName return an array-like object (not quite array)
+    let selected_pixels = document.getElementsByClassName("pixel-selected")
+    
+    // make selected_pixels into array so we can iterate using forEach
+    Array.from(selected_pixels).forEach(element => {
+        element.setAttribute('class', 'pixel-unselected');
+    });
+}

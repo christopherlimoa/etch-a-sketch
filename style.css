@@ -22,3 +22,8 @@ h1 {
 	height: 30px;
 	background-color: rgb(17, 14, 14);
 }
+
+button {
+	margin: 10px auto;
+	display: block;
+}
