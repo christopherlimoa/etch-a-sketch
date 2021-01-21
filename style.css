@@ -1,3 +1,7 @@
+body {
+	font-family: "Roboto", sans-serif;
+}
+
 h1 {
 	text-align: center;
 }
@@ -20,7 +24,7 @@ h1 {
 #container .pixel-selected {
 	width: 30px;
 	height: 30px;
-	background-color: rgb(17, 14, 14);
+	background-color: rgb(32, 32, 32);
 }
 
 button {
