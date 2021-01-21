@@ -15,8 +15,8 @@ h1 {
 }
 
 #grid_container .pixel-high {
-	width: calc(500px * (1 / 40) - 1px);
-	height: calc(500px * (1 / 40) - 1px);
+	width: calc(500px * (1 / 35) - 1px);
+	height: calc(500px * (1 / 35) - 1px);
 }
 
 #grid_container .pixel-medium {
@@ -37,7 +37,38 @@ h1 {
 	background-color: rgb(32, 32, 32);
 }
 
-button {
+#button_container {
+	width: 30%;
+	height: 50px;
 	margin: 5px auto;
-	display: block;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr;
+	grid-gap: 5px;
+	grid-template-areas:
+		"....... density"
+		"reset high"
+		"reset medium"
+		"reset low";
+}
+
+#reset {
+	grid-area: reset;
+}
+
+#high {
+	grid-area: high;
+}
+
+#medium {
+	grid-area: medium;
+}
+
+#low {
+	grid-area: low;
+}
+
+#density {
+	text-align: center;
+	grid-area: density;
 }
