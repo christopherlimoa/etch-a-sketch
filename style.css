@@ -6,28 +6,38 @@ h1 {
 	text-align: center;
 }
 
-#container {
+#grid_container {
 	width: 500px;
 	margin: auto;
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-evenly;
 	gap: 1px;
 }
 
-#container .pixel-unselected {
-	width: 30px;
-	height: 30px;
+#grid_container .pixel-high {
+	width: calc(500px * (1 / 40) - 1px);
+	height: calc(500px * (1 / 40) - 1px);
+}
+
+#grid_container .pixel-medium {
+	width: calc(500px * (1 / 30) - 1px);
+	height: calc(500px * (1 / 30) - 1px);
+}
+
+#grid_container .pixel-low {
+	width: calc(500px * (1 / 16) - 1px);
+	height: calc(500px * (1 / 16) - 1px);
+}
+
+.unselected {
 	background-color: lightgray;
 }
 
-#container .pixel-selected {
-	width: 30px;
-	height: 30px;
+.selected {
 	background-color: rgb(32, 32, 32);
 }
 
 button {
-	margin: 10px auto;
+	margin: 5px auto;
 	display: block;
 }

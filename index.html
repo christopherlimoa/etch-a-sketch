@@ -8,11 +8,19 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">   </head>
     </head>
-    
+
     <body>
         <h1>Etch-a-Sketch</h1>
-        <div id="container"></div>
-        <button id="reset" onClick="reset_canvas()"> reset </button>
+        <div id="grid_container"></div>
+
+        <div id="buttons">
+            <button id="reset" onClick="reset_canvas()"> reset </button>
+            <button id="high" onClick="high_density()"> high </button>
+            <button id="medium" onClick="medium_density()"> medium </button>
+            <button id="low" onClick="low_density()"> low </button>
+            
+        </div>
+    
     </body>
     
     <script src="app.js"></script>
