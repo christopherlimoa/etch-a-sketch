@@ -4,7 +4,6 @@ h1 {
 
 #container {
 	width: 500px;
-	background: LightGray;
 	margin: auto;
 	display: flex;
 	flex-wrap: wrap;
@@ -12,8 +11,14 @@ h1 {
 	gap: 1px;
 }
 
-#container div {
+#container .pixel-unselected {
 	width: 30px;
 	height: 30px;
-	background-color: rgb(30, 150, 172);
+	background-color: lightgray;
+}
+
+#container .pixel-selected {
+	width: 30px;
+	height: 30px;
+	background-color: rgb(17, 14, 14);
 }
